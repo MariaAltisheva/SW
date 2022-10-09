@@ -1,0 +1,9 @@
+
+version: "3.3"
+
+services:
+
+  web:
+    image: altishmari/hosting:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+    ports:
+      - 80:80
